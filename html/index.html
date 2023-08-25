@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <Link rel="stylesheet" href="./css/styles.css" />
+    <link 
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <Link rel="stylesheet" href="./css/styles.css" />  
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,29 +19,13 @@
       rel="stylesheet"
     />
     
-    <link 
-      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-      <style>
-        h1, h2, h3 {
-          margin: 0;
-        }
-        p {
-          margin: 0;
-        }
-        ul, ol {
-          margin: 0;
-          padding-left: 0;
-        }
-      </style>
   </head> 
    
   <body>
+
     <header class="header-container">
-    <div class="container">
-      <nav>
+    <div class="container-logo-nav container">
+      <nav class="navigation-list">
         
         <a href="./index.html" class="logo-header">Web<span class="logo-header-text">Studio</span></a> 
 
@@ -77,31 +66,31 @@
    <!--Section 2-->
 
     <section class="tytle-section">
-      <div class="container"></div>  
+      <div class="container"> 
         <h2 class="visually-hidden">TytleTwoSection</h2>
         <ul class="tytle-list-section">
-        <li>
+        <li class="tytle-section-list">
         <h3 class="title">Strategy</h3>
         <p class="text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
         </li>
         
-        <li>
+        <li class="tytle-section-list">
           <h3 class="title">Punctuality</h3>
           <p class="text">
           Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
         </li>
        
-        <li>
+        <li class="tytle-section-list">
         <h3 class="title">Diligence</h3>
         <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>  
         </li>
 
-        <li>
+        <li class="tytle-section-list">
         <h3 class="title">Technologies</h3>
         <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>  
       </li>      
       </ul>
-      </div>
+    </div> 
     </section>
 
     <!--Section 3-->
@@ -111,29 +100,37 @@
       <h2 class="post-team">Our Team</h2>
 
       <ul class="section-block-team">
-      <li class="block-cards-team">
+      <li class="block-cards-team"> 
         <img src="./images/TeamCard1.jpg" alt="TeamCard1" width="264" />
+        <div class="description-team">
         <h3 class="box-title">Mark Guerrero</h3>
         <p class="box-post">Product Designer</p>
+        </div>
       </li>
       
       <li class="block-cards-team">
         <img src="./images/TeamCard2.jpg" alt="TeamCard2" width="264" />
+        <div class="description-team">
         <h3 class="box-title">Tom Ford</h3>
         <p class="box-post">Frontend Developer</p> 
+        </div>
       </li> 
       
      
-        <li class="block-cards-team"> 
+        <li class="block-cards-team">  
         <img src="./images/TeamCard3.jpg" alt="TeamCard3" width="264" />
+        <div class="description-team">
         <h3 class="box-title">Camila Garcia</h3>
         <p class="box-post">Marketing</p>
+        </div>
         </li>
 
-        <li class="block-cards-team">
-          <img src="./images/TeamCard4.jpg" alt="TeamCard4" width="264" />
-          <h3 class="box-title">Daniel Wilson</h3>
-          <p class="box-post">UI Designer</p>
+        <li class="block-cards-team"> 
+        <img src="./images/TeamCard4.jpg" alt="TeamCard4" width="264" />
+        <div class="description-team"> 
+        <h3 class="box-title">Daniel Wilson</h3>
+        <p class="box-post">UI Designer</p>
+        </div>
         </li>
        
       </ul>
@@ -141,57 +138,72 @@
     </section>
 
     <!--Section 4-->
-    <section> 
+    <section class="block-portfolio"> 
       <div class="container"> 
     <h2 class="title-list">Our Portfolio</h2>
     
     <ul class="section-title-block"> 
-      <li>
+      <li class="description-potfolio">
         <img src="./images/BankingApp.jpg"
         alt="BankingApp"
         width="360" />
+        <div class="description-potfolio-title">
         <h3 class="list-title-block">Banking App</h3>
         <p class="text-title-block">App</p>
+        </div>
       </li>
   
-      <li>
+      <li class="description-potfolio">
         <img src="./images/CashlessPayment.jpg"
         alt="CashlessPayment"
         width="360" />
+        <div class="description-potfolio-title"> 
         <h3 class="list-title-block">Cashless Payment</h3>
         <p class="text-title-block">Marketing</p>
+        </div>
       </li>
 
-      <li>
+      <li class="description-potfolio">       
         <img src="./images/MeditationApp.jpg"
         alt="MeditationApp"
         width="360" />
+        <div class="description-potfolio-title">
         <h3 class="list-title-block">Meditation App</h3>
         <p class="text-title-block">App</p>
+        </div>
       </li>
 
-      <li>
+      <li class="description-potfolio">
+        
        <img src="./images/TaxiServiceMarketing.jpg"
        alt="TaxiServiceMarketing"
        width="360" />
+       <div class="description-potfolio-title"> 
         <h3 class="list-title-block">Taxi Service</h3>
         <p class="text-title-block">Marketing</p>
+        </div>
       </li>
 
-      <li>
+      <li class="description-potfolio">
+        
        <img src="./images/ScreenIllustrationsDesign.jpg"
        alt="ScreenIllustrationsDesign"
        width="360" />
+       <div class="description-potfolio-title">
         <h3 class="list-title-block">Screen Illustrations</h3>
         <p class="text-title-block">Design</p>
+        </div>
       </li>
 
-      <li>
+      <li class="description-potfolio">
+        
         <img src="./images/OnlineCoursesMarketing.jpg"
         alt="OnlineCoursesMarketing"
         width="360" />
+        <div class="description-potfolio-title">
         <h3 class="list-title-block">Online Courses</h3>
         <p class="text-title-block">Marketing</p>
+        </div>
       </li>
     </ul>  
     </div>
