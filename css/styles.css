@@ -164,6 +164,11 @@
     url(/images/people-office\ 1.jpg);
 }
 
+.icons {
+    fill: none;
+    background-color: #F4F4FD;
+}
+
 .button-style {
     color: #FFFFFF;
     background-color: #4D5AE5;
