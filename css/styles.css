@@ -79,15 +79,20 @@
     font-family: Roboto, sans-serif;
     font-style: normal;
     padding: 24px 0;
+    position: relative;
 }
 
 .my-link::before {
     text-decoration: none;
+    position: absolute: left: 0; 
+    bottom: - 1px;
 }
 
 .my-link::after {
     text-decoration: underline;
     color: #404BBF;
+    position: absolute: left: 0; 
+    bottom: - 1px;
 }
 
 .my-link:hover {
@@ -271,7 +276,6 @@
 .icons-block-kards-team {   
    width: 40px;
    height: 40px;
-
 }
 
 .icons-team-link {
@@ -401,6 +405,27 @@
 
 .description-potfolio {
     width: calc((100% - 48px) / 3); 
+    position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.description-potfolio:hover {
+    transform: translateY(0%);
+}
+
+.box-hiden {
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+
 }
 
 
@@ -423,6 +448,7 @@
     background-color: #2e2f42;
     height: 312px;
     padding: 100px 0
+    
 }
 
 .box-last-text {
@@ -462,15 +488,7 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     display: inline-block;
-    margin-bottom: 188px;
-    
-
-}
-.container-social {
-    display: inline-block;
-    margin-left: 120px;
-    margin-bottom: 132px;
-    gap: 120px;
+  
 }
 
  ul {
