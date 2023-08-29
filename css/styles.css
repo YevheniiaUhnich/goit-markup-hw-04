@@ -232,7 +232,7 @@
     border: none;
     border-radius: 4px;
     margin: auto; 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
  }
 
  .button-style:hover {
@@ -425,6 +425,11 @@
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.section-title-block:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+
 .description-potfolio {
     width: calc((100% - 48px) / 3); 
     position: relative;
@@ -433,6 +438,7 @@
 }
 .description-potfolio:hover {
     transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .box-hiden {
@@ -457,7 +463,6 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
 
 .description-potfolio-title {
     padding: 32px 16px;
@@ -538,6 +543,7 @@
     display: flex;
     align-items: center; 
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
