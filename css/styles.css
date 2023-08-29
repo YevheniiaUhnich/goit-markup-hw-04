@@ -81,8 +81,18 @@
     padding: 24px 0;
 }
 
+.my-link::before {
+    text-decoration: none;
+}
+
+.my-link::after {
+    text-decoration: underline;
+    color: #404BBF;
+}
+
 .my-link:hover {
     color: #404bbf;
+    text-decoration: underline;
 }
 
 .my-link:focus {
@@ -105,10 +115,20 @@
 
 .link-contact-text:hover {
      color: #404bbf;
+     text-decoration: underline;
 }
 
 .link-contact-text:focus {
     color: #404bbf;
+}
+
+.link-contact-text::before {
+    text-decoration: none;
+}
+
+.link-contact-text::after {
+    text-decoration: underline;
+    color: #404BBF;
 }
 
 .contact-all {
@@ -238,6 +258,7 @@
 
 .section-block-team {
     display: flex;
+    justify-content: center;
     gap: 24px;  
 }
 
@@ -247,11 +268,33 @@
     margin-top: 8px;    
 }
 
-.icons-block-kards-team {
+.icons-block-kards-team {   
    width: 40px;
    height: 40px;
+
 }
 
+.icons-team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.icons-team-link:hover {
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.icons-team-link:focus {
+    background-color: #4D5AE5;
+    
+
+}
 
 .blok-post-team {
     background-color: #F4F4FD;
@@ -289,6 +332,8 @@
 .block-cards-team {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px; 
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: inset 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
 }
 
 .description-team  {
@@ -357,6 +402,7 @@
 .description-potfolio {
     width: calc((100% - 48px) / 3); 
 }
+
 
 .description-potfolio-title {
     padding: 32px 16px;
