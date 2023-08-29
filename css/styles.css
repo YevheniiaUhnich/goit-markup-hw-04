@@ -497,6 +497,7 @@
     line-height: 24px;
     letter-spacing: 0.02em;   
     width: 264px;
+    margin-bottom: 16px;
 }
 
 .box-last-logo {
@@ -545,7 +546,7 @@
 }
 
 .icons-footer-link:focus {
-    background-color: #31d0aa;
+    background-color: #31d0aa;;
 }
 
 .icons-footer-social-link {
@@ -557,12 +558,10 @@
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    margin-left: 540px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     display: inline-block;
     margin-bottom: 16px;
-  
 }
 
  ul {
