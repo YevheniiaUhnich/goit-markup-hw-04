@@ -431,7 +431,7 @@
 }
 
 .section-title-block:hover::before {
-    transform: translateY(100%);
+    transform: translateY(0%);
 }
 
 .section-title-block:hover::after {
